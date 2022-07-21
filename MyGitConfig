@@ -1,0 +1,24 @@
+[user]
+	email = ExampleMail@example.com
+	name = Name
+[alias]
+	br = branch
+    s = status
+    ss = status --short
+    cm = commit
+    cmd = commit -v
+    diffst = diff --staged
+    diffT = difftool
+    ls = log --graph --oneline
+    lss = log --graph --pretty=format:'%h - %an, %ar : %s'
+    fullog = log --graph --pretty=format:'HASH -> %H\n\n author   - name: %an, email: %ae\n commiter - name: %cn, email %ce\n\ndata: %ad [%ar]\n\ncontent: %s\n'
+[core]
+	autocrlf = false
+[init]
+	defaultbranch = main
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvimdiff2
+[color]
+	ui = true
