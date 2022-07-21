@@ -59,6 +59,20 @@
     "git remote rename [old_name] [new_name]" = Переименовывает удалённый репозиторий.
     "git remote show [name]" = Просмотр удалённого репозитория.
 
+Теги:
+    "git tag { -l | --list }" = Покажет список всех тегов в репозитории.
+    "git tag [tag_name]" = Создаст Легковесный тег (без автора и дополнений) указывающий на текущий коммит.
+    "git tag [tag_name] [hash]" = Создаст тег указывающий на коммит 'hash'.
+    "git tag -a [tag_name]" = Создаст Аннотированный тег (с сообщением и тд).
+    "git show [tag_name]" = Покажет содержимое тега вместе с коммитом.
+    "git tag -d [tag_name]" = Удалит тег 'tag_name'.
+    "git push <remote> [tag_name]" = Отправит тег на удалённый репозиторий.
+    "git push <remote> --tags" = Отправит ВСЕ теги на удалённый репозиторий.
+    "git push <remote> --follow-tags" = Отправит ТОЛЬКО АННТОТИРОВАННЫЕ теги на удалённый репозиторий.
+    "git push <remote> :refs/tags/[tag_name]" = Удалит тег 'tag_name' на удалённом репозитории.
+    "git push <remote> --delete [tag_name]" = Удалит тег 'tag_name' на удалённом репозитории.
+    "git checkout [tag_name]" = Переход на коммит с тегмо 'tag_name', но с DETECHED HEAD.
+
 P.S
 Добавить некий контент в следующий комит: "git add"
 
