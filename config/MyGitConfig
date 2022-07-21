@@ -13,7 +13,9 @@
     lss = log --graph --pretty=format:'%h - %an, %ar : %s'
     fullog = log --graph --pretty=format:'HASH -> %H\n\n author   - name: %an, email: %ae\n commiter - name: %cn, email %ce\n\ndata: %ad [%ar]\n\ncontent: %s\n'
     chck = checkout
-    restorest = restore --staged
+	unstage = restore --staged
+	last = log -1
+	visual = !gitk
 [core]
 	autocrlf = false
 [init]
