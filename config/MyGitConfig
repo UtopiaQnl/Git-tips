@@ -2,13 +2,14 @@
 	email = ExampleMail@example.com
 	name = Name
 [alias]
-	br = branch
+	br = branch -v
     s = status
     ss = status --short
     cm = commit
     cmd = commit -v
     diffst = diff --staged
     diffT = difftool
+    mergeT = mergetool
     ls = log --graph --oneline
     lss = log --graph --pretty=format:'%h - %an, %ar : %s'
     fullog = log --graph --pretty=format:'HASH -> %H\n\n author   - name: %an, email: %ae\n commiter - name: %cn, email %ce\n\ndata: %ad [%ar]\n\ncontent: %s\n'

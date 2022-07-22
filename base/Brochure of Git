@@ -43,7 +43,7 @@
         --oneline = --pretty=oneline --abbrev-commit
         "-S [word]" = Показывает ВСЕ коммиты где было упоминания 'word'.
     "git push" = Отправляет изменения на удалённый репозиторий.
-        { -u | "--set-upstream [name_branch]" } = Ставит ветку 'name_branch' как основную на поток.
+        { -u | "--set-upstream [name_branch]" } = Ставит ветку 'name_branch' как основную на поток и тд.
     { "git pull" | "git fetch" } = Забирает изменения с удалённого репозитория.
         pull = Автоматически сливает удалённую ветку со своей текущей.
         fetch = Забирает данные в ваш локальный репозиторий, не сливает их.
@@ -51,6 +51,7 @@
 Второстепенные команды Гит:
     "git branch [name_branch]" = Показывает на какой сейчас ветке мы находимcя. Есть есть 'name_branch' то создасться ветка с таким именем.
         -b = Переключит на созданную ветку 'name_branch'.
+        { -m | --move } [old_name] [new_name] = Переименовывает ветку с 'old_name' на 'new_name'.
     "git switch [--options [name_branch]]" = Позволяет переключится на ветку с именем 'name_branch'.
         - = Переключает на предыдущию ветку.
         { -с | --create } = Создать и переключится на ветку 'name_branch'.
@@ -102,5 +103,11 @@ P.S
 Для отмены ИЗМЕНЕНИЙ, которые НЕ ИНДЕКСИРОВАНЫ
     "git checkout -- [file_name]"
     @  "git restore [file_name]"  @
+
+Для переименовывание веток
+    На локальном репозитории: "git branch -m [old_name] [new_name] | git branch --move [old_name] [new_name]"
+    Отправить изменённую ветку на удалённый репозиторий: "git push --set-upstream <remote> [name_branch]"
+    Удалить ветку на удалённом репозитории: "git push <remote> --delete [name_branch]"
+
 
 
