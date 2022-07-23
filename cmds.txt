@@ -233,9 +233,9 @@ git pull:
         git checkout <tagname>
 
     Для отправки тега на удалённый репозиторий: 
-        git <remote> <tagname>
-        git <remote> --tags = Отправит ВСЕ теги
-        git <remote> --follow-tags = Отправит только АННТОТИРОВАННЫЕ теги
+        git push <remote> <tagname>
+        git push <remote> --tags = Отправит ВСЕ теги
+        git push <remote> --follow-tags = Отправит только АННТОТИРОВАННЫЕ теги
 
     Для удаление тегов с удалённого репозитория:
         git push <remote> --delete <tagname>
