@@ -68,6 +68,7 @@
     "git remote rename [old_name] [new_name]" = Переименовывает удалённый репозиторий.
     "git remote show [name]" = Просмотр удалённого репозитория.
 
+
 Теги:
     "git tag { -l | --list }" = Покажет список всех тегов в репозитории.
     "git tag [tag_name]" = Создаст Легковесный тег (без автора и дополнений) указывающий на текущий коммит.
@@ -106,7 +107,7 @@ P.S
 
 Для переименовывание веток
     На локальном репозитории: "git branch -m [old_name] [new_name] | git branch --move [old_name] [new_name]"
-    Отправить изменённую ветку на удалённый репозиторий: "git push --set-upstream <remote> [name_branch]"
+    Отправить изменённую ветку на удалённый репозиторий: "git push <remote> [name_branch]"
     Удалить ветку на удалённом репозитории: "git push <remote> --delete [name_branch]"
 
 
