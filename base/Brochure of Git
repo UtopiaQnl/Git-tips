@@ -109,5 +109,6 @@ P.S
     Отправить изменённую ветку на удалённый репозиторий: "git push --set-upstream <remote> [name_branch]"
     Удалить ветку на удалённом репозитории: "git push <remote> --delete [name_branch]"
 
+Для того что-бы при клонировании репозитория не было origin: git clone -o [name] <url>
 
 
