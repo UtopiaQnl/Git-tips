@@ -2,20 +2,19 @@
 	email = ExampleMail@example.com
 	name = Name
 [alias]
-	br = branch -v
     s = status
     ss = status --short
+    br = branch -v
     cm = commit
     cmd = commit -v
+    ls = log --graph --oneline --all
+    lss = log --graph --pretty=format:'%h - %an, %ar : %s'
+    fullog = log --graph --pretty=format:'HASH -> %H\n\n author   - name: %an, email: %ae\n commiter - name: %cn, email %ce\n\ndata: %ad [%ar]\n\ncontent: %s\n'	
+    unstage = restore --staged
     diffst = diff --staged
     diffT = difftool
     mergeT = mergetool
-    ls = log --graph --oneline
-    lss = log --graph --pretty=format:'%h - %an, %ar : %s'
-    fullog = log --graph --pretty=format:'HASH -> %H\n\n author   - name: %an, email: %ae\n commiter - name: %cn, email %ce\n\ndata: %ad [%ar]\n\ncontent: %s\n'
     chck = checkout
-	unstage = restore --staged
-	last = log -1
 	visual = !gitk
 [core]
 	autocrlf = false
