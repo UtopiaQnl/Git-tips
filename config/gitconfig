@@ -1,0 +1,34 @@
+[user]
+	email = ExampleMail@example.com
+	name = Name
+[alias]
+    s = status
+    ss = status --short
+    br = branch -v
+    sw = switch
+    cm = commit
+    cmd = commit -v
+    ls = log --graph --oneline --all
+    lss = log --graph --pretty=format:'%C(Yellow)%h%Creset - %Cblue%s%Creset, %Cgreen%an%Creset : %C(cyan)%ar'
+    fullog = log --graph --pretty=format:'%CredHASH -> %H\n\n %Cgreenauthor   - name: %an, email: %ae\n %Cbluecommiter - name: %cn, email %ce\n\ndata: %C(cyan)%ad%Creset %C(magenta)[%ar]\n\ncontent: %C(Yellow)%s\n'
+    unstage = restore --staged
+    unstageAll = reset HEAD
+    restoreAll = checkout .
+    diffst = diff --staged
+    diffcur = diff HEAD
+    diffT = difftool
+    mergeT = mergetool
+    chck = checkout
+	visual = !gitk
+[credential]
+	helper = cache --timeout 1800
+[core]
+	autocrlf = false
+[init]
+	defaultbranch = main
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvimdiff2
+[color]
+	ui = true
