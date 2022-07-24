@@ -170,6 +170,9 @@ git pull:
     git rm -f | git rm --force <file> = Удаляет ПРИНУДИТЕЛЬНО файл И С ДИСКА И ИЗ ИНДЕКСА.
     git rm --cached <file> = Удаляет файл ИЗ ИНДЕКСА, но НЕ С ДИСКА.
 
+Просмотреть разницу между ветками:
+    git log <branch1>..<branch2>
+
 Работа с локальными ветками:
     Cоздать ветку <branch_name>:
         git branch <branch_name>
@@ -203,6 +206,9 @@ git pull:
     Для удаления ветки слежения:
         git branch -r <branchname>
         git remote prune <remote>
+
+    Для просмотра коммитов между удалённой и текущей веткой:
+        git log <cur_branch>..<remote>/<branch>
 
 
 Для работы с удалёнными репозиториями:
