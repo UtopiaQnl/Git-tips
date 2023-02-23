@@ -266,8 +266,16 @@ git commit -v  # Добавит в сообщенеи коммита инфу о
 
 ## **remote**
 
->
+> Утилита для работы с удалёнными репозиториями
 ```bash
+git remote  # Вывод удалённых репозиторий (имена).
+git remote -v  # Подробный вывод удалённых репозиторией.
+git remote add <remote> <url>  # Добавить удалённый репозиторий <url> как <remote>.
+git remote rm <remote>  # Удалить удалённый репозиторий <remote>.
+git remote rename <remote> <new_remote>  # Переименовать <remote> в <new_remote>.
+git remote show <remote>  # Для получение инфы о <remote>.
+git remote get-url <remote>  # Для получения урла от <remote>.
+git remote prune <remote>  # Для удаление старых веток слежения.
 ```
 
 ## fetch
@@ -402,7 +410,7 @@ git mv <old_file_name> <new_file_name>
 </h2>
 
 ```bash
-git restore <file_name>  # Убрать все измеенния и вернуть состояние файла с прерыдущего коммита.
+git restore <file_name>  # Убрать все изменения и вернуть состояние файла с прерыдущего коммита.
 ```
 
 <br>
