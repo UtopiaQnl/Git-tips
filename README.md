@@ -198,3 +198,16 @@ git log --graph  # Покажет в виде древа ASCII.
 * %ad = Дата коммита.
 * %s = Содержание коммита.
 * %Cred, %Cgrean, %Cblue, %Creset, %C(...) = Цвета, сброс цвета, свой.
+
+***
+
+## **branch**
+
+>Утилита для работы с ветками. По-умолчанию просматривает все доступные ветки.
+```bash
+git branch [-c | --create] <br_name>  # Создасть ветку br_name
+git branch [-d | --delete] <br_name>  # Удалить ветку br_name
+git branch -m <old_name> <new_name>  # Переименует ветку
+git branch -u <remote>  # Привязать текуюю ветку к удалённой
+git branch -f <br_name> <point>  # Заставить указывать ветку на point
+```
