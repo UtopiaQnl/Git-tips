@@ -1,6 +1,38 @@
-# gitStudy
+# GIT Commmands
 
-In the config is my git config 'gitconfig'
-In the cmds.txt is git commands
-In the some_files/pic is ASCII pictures
+# Features
 
+-   [config](#config)
+-   [init](#init)
+-   [clone](#clone)
+-   [add](#add)
+-   [status](#status)
+-   [log](#log)
+-   [branch](#branch)
+-   [commit](#commit)
+-   [push](#push)
+-   [remote](#remote)
+    -   [fetch](#fetch)
+    -   [pull](#pull)
+-   [stash](#stash)
+-   [tag](#tag)
+-   [cherry-pick](#cherry-pick)
+-   [rebase](#rebase)
+-   [merge](#merge)
+    -   [mergetool](#mergetool)
+-   [diff](#diff)
+    -   [difftool](#difftool)
+-   [Стандартный-сценарий](#standart)
+-   [Работа-с-файлами](#files)
+    -   [Удалить-файлы](#delete-files)
+    -   [Переименовать-файлы](#rename-files)
+-   [Работа-с-удаленным-репозиторием](#remote-repos)
+-   [Работа-с-ветками](#branches)
+    -   [Работа-с-ветками-(локальными)](#work-branch-locale)
+    -   [Работа-с-ветками-(удаленными)](#work-branch-remote)
+-   [Работа-с-тегами](#tags)
+-   [Редкие-случаи](#rare-cases)
+    -   [Посмотреть-разницу-между-ветками](#diff-branches)
+    -   [Изменить-несколько-коммитов](#lot-commits)
+
+***
