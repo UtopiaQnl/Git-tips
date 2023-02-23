@@ -258,8 +258,13 @@ git commit -v  # Добавит в сообщенеи коммита инфу о
 
 ## **push**
 
->
+> Утилита для отправки коммитов на удалённый репозиторий
 ```bash
+git push <remote> <local_branch>  # Отправить ветку в удалённый репозиторий или просто отправить изменения этой ветки в удалённую.
+git push <remote> --delete <local_branch>  # Удалит удалённую ветку <local_branch> в <remote>.
+git push <remote> --all  # Публикация всех локальных веток в <remote>.
+git push <remote> --tags  # Публикация всех локальных тегов в <remote>.
+git push [-u | --set-upstream]  # Привяжет ветку <branch> к <remote>/<branch>
 ```
 
 ***
