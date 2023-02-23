@@ -284,6 +284,16 @@ git branch [-d | -D (-f -d)] <name_branch>
 Работа с удалёнными ветками
 </h2>
 
+### Для получений обновлений из remote, но не слияния
+```bash
+git fetch <remote>
+```
+
+### Для получений обновления из remote, посредством слияния / перебазирования в <name_branch>
+```bash
+git merge | rebase <remote>/<name_branch>
+```
+
 
 
 ***
