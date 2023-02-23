@@ -31,6 +31,7 @@
 -   [Работа с ветками](#branches)
     -   [Работа с ветками (локальными)](#branch-locale)
     -   [Работа с ветками (удаленными)](#branch-remote)
+-   [Работа с коммитами](#commits)
 -   [Работа с тегами](#tags)
 -   [Работа со стешем](#stashes)
 -   [Редкие случаи](#rare-cases)
@@ -208,11 +209,14 @@ git log --graph  # Покажет в виде древа ASCII.
 
 >Утилита для работы с ветками. По-умолчанию просматривает все доступные ветки.
 ```bash
+git branch [--list]  # Покажет список всех веток
 git branch [-c | --create] <br_name>  # Создасть ветку br_name.
 git branch [-d | --delete] <br_name>  # Удалить ветку br_name.
 git branch -m <old_name> <new_name>  # Переименует ветку.
 git branch -u <remote>  # Привязать текуюю ветку к удалённой.
 git branch -f <br_name> <point>  # Заставить указывать ветку на point.
+git branch --merged  # Покажет ветки, которые слиты (можно удалять).
+git branch --no-merged  # Покажет ветки, которые ещё не слиты.
 ```
 
 ***
@@ -230,16 +234,24 @@ git switch -  # Переключает на предыдущую ветку.
 
 ## **checkout**
 
->
+> Переключает на <point\>
 ```bash
+git checkout <point>  # Может быть ветка, тег, хеш коммита и т.д.
+git checkout -b <name_branch>  # Создаст и переключится на ветку name_branch.
 ```
 
 ***
 
 ## **commit**
 
->
+> Фиксация изменений иднекса в коммит
 ```bash
+git commit  # Сделать коммит без сообщения.
+git commit -m <text>  # Создаст коммит с сообщением <text>.
+git commit -a  # Сделает git add . и только потом git commit.
+git commit -am <text>  # Тое что и git commit -a -m <text>.
+git commit --amend  # Заменить последний коммит новым, с изменениями.
+git commit -v  # Добавит в сообщенеи коммита инфу о том, что было изменено (в комментах).
 ```
 
 ***
@@ -486,6 +498,11 @@ git fetch <remote>
 ```bash
 git merge | rebase <remote>/<name_branch>
 ```
+***
+
+<h2 id="commits">
+Работа с коммитами
+</h2>
 
 ***
 
