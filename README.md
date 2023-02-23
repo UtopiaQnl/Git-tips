@@ -19,8 +19,6 @@
 -   [stash](#stash)
 -   [tag](#tag)
 -   [cherry-pick](#cherry-pick)
--   [rebase](#rebase)
--   [merge](#merge)
 -   [diff](#diff)
 -   [Стандартный сценарий](#standart-script)
 -   [Работа с файлами](#files)
