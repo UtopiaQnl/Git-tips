@@ -128,3 +128,13 @@ git init <path>  # Создает репозпиторий с именем path 
 git init --bare  # Создать *голый репозиторий (для серверов).
 git init [-b <br_name> | --initial-branch=<br_name>]  # Создает репозиторий с основной веткой <br_name>
 ```
+
+***
+
+## **clone**
+
+>Инициализирует удалённый репозиторий, который находится по адресу <link>.
+```bash
+git clone <link> <path>  # Создает реопзиторий на месте, иначе в <path>
+git clone <link> [-o <name> | --origin <name>]  # Имя вместо origin
+```
