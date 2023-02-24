@@ -357,7 +357,7 @@ git dfff HEAD  # Покажет разницу между последним к�
 
 ### Если только не был установлен гит:
 ```bash
-git config --global user.name "<name>"
+git config --global user.name <name>
 git config --global user.email <email>
 ```
 ### Установка редактора по-умолчанию:
