@@ -554,6 +554,15 @@ git push <remote> --tags  # Для отправки всех обычных те
 git push <remote> --follow-tags  # Для отправки всех аннотированных тегов.
 ```
 
+### Пререименовывание тега old в new
+```bash
+git tag new old  # Создаю тег new на месте тега old
+git tag -d old  # Удаляю старый тег old
+git push origin new :old  # Двоеточие удаляет тег из удаленного репозитория.
+# После нужно убедиться что все удалили удаленный тег:
+git pull --prune --tags
+```
+
 ### Для удаления тегов с удалённого репозитория
 ```bash
 git push <remote> --delete <tag_name>
