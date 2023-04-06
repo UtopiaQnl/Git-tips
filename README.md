@@ -668,10 +668,8 @@ git reset --hard HEAD^
 </h2>
 
 ```bash
-# Переключаемся на ветку, куда нжуно переместить файлы
-git checkout main
-# Забираем из другой ветки нужные файлы
-git checkout <branch_name> -- <paths>
+git checkout main  # Переключаемся на ветку, куда нужно переместить файлы
+git checkout <branch_name> -- <paths>  # Забираем из другой ветки нужные файлы
 ```
 
 <br />
