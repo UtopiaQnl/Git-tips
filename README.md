@@ -522,7 +522,7 @@ git merge <remote>/<name_branch>
 git rebase <remote>/<name_branch>
 ```
 
-### Удалить ветку на удаленном репозитории (точно также как и с тагом)
+### Удалить ветку на удаленном репозитории (точно также как и с тегом)
 ```bash
 git push <remote> --delete <name_branch>
 ```
