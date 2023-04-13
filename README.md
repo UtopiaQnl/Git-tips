@@ -516,9 +516,15 @@ git branch [-d | -D (-f -d)] <name_branch>
 git fetch <remote>
 ```
 
-### Для получений обновления из remote, посредством слияния / перебазирования в <name_branch>
+### Для получений обновления из remote, посредством слияния | перебазирования в <name_branch>
 ```bash
-git merge | rebase <remote>/<name_branch>
+git merge <remote>/<name_branch>
+git rebase <remote>/<name_branch>
+```
+
+### Удалить ветку на удаленном репозитории (точно также как и с тагом)
+```bash
+git push <remote> --delete <name_branch>
 ```
 
 ***
