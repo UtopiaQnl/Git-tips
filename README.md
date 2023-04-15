@@ -39,6 +39,10 @@
     -   [Переместить ветку в другое место](#new-branch-pos)
     -   [Удалить последний коммит](#remove-last-commit)
     -   [Скопировать файлы с другой ветки](#copy-files-from-branches)
+    -   [Отменить всё до определённого коммита](#reset-all-for-commit)
+    -   [Изменить коммиты (закоммитить файлы в другом порядке)](#change-history-commit)
+    -   [Слить несколько коммитов в один](#merge-commits)
+
 
 ***
 
@@ -696,3 +700,31 @@ git checkout <branch_name> -- <paths>  # Забираем из другой ве
 ```
 
 <br />
+
+<h2 id="reset-all-for-commit">
+Отменить всё до определённого коммита
+</h2>
+
+```bash
+git reset --hard <hash>  # вместо <hash> можно использовать HEAD (начать работу с чистого листа)
+```
+
+<br />
+
+<h2 id="change-history-commit">
+Изменить коммиты (закоммитить файлы в другом порядке)
+</h2>
+
+```bash
+git reset
+```
+
+<br />
+
+<h2 id="merge-commits">
+Слить несколько коммитов в один
+</h2>
+
+```bash
+git reset --soft <hash>
+```
