@@ -35,6 +35,7 @@
 -   [Работа со стешем](#stashes)
 -   [Редкие случаи](#rare-cases)
     -   [Посмотреть разницу между ветками](#diff-branches)
+    -   [Посмотреть разницу между коммитами](#diff-commits)
     -   [Изменить несколько коммитов](#lot-commits)
     -   [Переместить ветку в другое место](#new-branch-pos)
     -   [Удалить последний коммит](#remove-last-commit)
@@ -653,6 +654,39 @@ git log <branch1>..<branch2>
 git log <local_branch>..<remote>/<remote_branch>  # Для просмотра разницы между локальной и удаленной веткой.
 ```
 За место log можно использовать любой другой формат вывода разницы
+
+<br />
+
+
+<h2 id="diff-commits">
+Посмотреть разницу между коммитами
+</h2>
+
+```bash
+git diff <hash1> <hash2>  # Вывести изменения между двумя точками
+```
+
+```bash
+git diff HEAD^ HEAD  # Посмотреть разницу между последним коммитом и текущем состоянием
+git diff HEAD^..HEAD  # Аналогочно предыдущей команде
+```
+
+```bash
+git diff HEAD^ HEAD - ./file  # Вывести изменения только для определённого файла
+```
+
+```bash
+git diff HEAD^ HEAD --output=<file>  # Вывести в файл
+git diff HEAD^ HEAD > file  # Поменять вывод
+```
+
+```bash
+git diff HEAD~5 HEAD --name-status  # Вывести только имена изменённый файлов
+```
+
+```bash
+git diff HEAD~ HEAD --compact-summary  # Вывести короткую справку о изменениях
+```
 
 <br />
 
